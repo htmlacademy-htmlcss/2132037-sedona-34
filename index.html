@@ -207,6 +207,61 @@
     </footer>
   </div>
   </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+      </section>
+      <div class="date-check-in-block">
+        <label class="date-check-in" for="date-check-in">Дата Заезда:</label>
+        <input class="date-picker" type="text" id="date-check-in" placeholder="Дата заезда" value="27 апреля 2020">
+        <button class="calendar" type="button">
+        </button>
+      </div>
+      <p class="error">Мы не можем отправить вас в прошлое.</p>
+      <div class="date-departure-block">
+        <label class="date-departure" for="date-departure">Дата Выезда:</label>
+        <input class="date-departure-picker" id="date-departure" type="text" placeholder="Дата заезда"
+          value="1 сентября 2021">
+        <button class="calendar" type="button">
+        </button>
+      </div>
+      <p class="info-date">На эти даты есть свободные номера. Пока есть.</p>
+      <div class="quantity-persons">
+        <label class="text-adults" for="text-adults">Взрослые:</label>
+        <button class="button-minus" type="button">
+        </button>
+        <input class="number-of-persons" id="text-adults" type="number" name="quantity-persons"
+          placeholder="Количество взрослых" value="2" min="1" max="25">
+        <button class="button-plus" type="button">
+        </button>
+        <span class="form-label form-label-icon">
+          <label class="text-children" for="text-adults">Дети:</label>
+          <span class="tooltip">
+            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+              <!-- <div class="decoration-info"></div> -->
+              <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
+              </svg>
+            </button>
+            <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
+              возраст которых от 6 до 18 лет.
+              Дети до 6 лет размещаются бесплатно.</span>
+          </span>
+        </span>
+        <button class="button-minus-children" type="button">
+        </button>
+        <input class="number-of-persons-children" id="" type="number" name="quantity-children"
+          placeholder="Количество детей" value="1" min="1" max="25">
+        <button class="button-plus-children" type="button">
+        </button>
+      </div>
+      <button class="button-search" type="submit">Найти</button>
+
+    </div>
 </body>
 
 </html>
