@@ -99,29 +99,27 @@
               </li>
             </ul>
           </li>
-          <div class="block-2">
-            <li>
-              <div class="image advantages">
-                <img src="./images/photo-sedona/photo-2.jpg" width="800" height="384" alt="Фото пустыни">
-              </div>
-            </li>
-            <li class="large-blocks card">
-              <div>
-                <h2 class="advantages-title-bridge">Там есть<br> мост дьявола</h2>
-                <span class="advantages-number">— №2 —</span>
-                <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </div>
-            </li>
-          </div>
+          <li class="other-advantages">
+            <div class="image advantages">
+              <img src="./images/photo-sedona/photo-2.jpg" width="800" height="384" alt="Фото пустыни">
+            </div>
+            <div class="large-blocks card">
+              <h2 class="advantages-title-bridge">Там есть<br> мост дьявола</h2>
+              <span class="advantages-number">— №2 —</span>
+              <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+          </li>
+        </ol>
       </div>
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <div class="block-3">
+      <ul class="block-3 advantages-list">
         <li class="advantages-item card">
           <div>
             <h3 class="advantages-title-section">Небольшая площадь</h3>
             <span class="advantages-number">— №3 —</span>
             <p class="advantages-text">Все достопримечательности находятся очень близко</p>
           </div>
+        </li>
         <li class="card advantages-road">
           <div>
             <h3 class="advantages-title-section">Красивая<br>
@@ -137,9 +135,7 @@
             <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
-      </div>
-      </ol>
-      </section>
+      </ul>
       <section class="proposal">
         <h2 class="advantages-title-proposal">Заинтересовались?</h2>
         <p class="advantages-proposal">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
@@ -206,7 +202,6 @@
       </div>
     </footer>
   </div>
-  </div>
   <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <button class="modal-close-button">
@@ -239,11 +234,11 @@
         <button class="button-plus" type="button">
         </button>
         <span class="form-label form-label-icon">
-          <label class="text-children" for="text-adults">Дети:</label>
+          <label class="text-children" for="amount-of-children">Дети:</label>
           <span class="tooltip">
             <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-              <!-- <div class="decoration-info"></div> -->
-              <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
               </svg>
             </button>
@@ -254,14 +249,14 @@
         </span>
         <button class="button-minus-children" type="button">
         </button>
-        <input class="number-of-persons-children" id="" type="number" name="quantity-children"
+        <input class="number-of-persons-children" id="amount-of-children" type="number" name="quantity-children"
           placeholder="Количество детей" value="1" min="1" max="25">
         <button class="button-plus-children" type="button">
         </button>
       </div>
       <button class="button-search" type="submit">Найти</button>
-
     </div>
+  </div>
 </body>
 
 </html>
