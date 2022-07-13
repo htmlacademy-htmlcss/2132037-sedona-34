@@ -57,7 +57,7 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item-home">
-                <a fill="#FFFFFF" class="breadcrumbs-home" href="index.html">
+                <a class="breadcrumbs-home" href="index.html">
                   <svg class="breadcrumbs-home-link" width="13" height="13" viewBox="0 0 13 13"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -76,7 +76,8 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input-infrastructure visually-hidden" type="checkbox" name="swimming-pool" checked>
+                    <input class="control-input-infrastructure visually-hidden" type="checkbox" name="swimming-pool"
+                      checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
@@ -102,7 +103,8 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel" checked>
+                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel"
+                      checked>
                     <span class="control-marking"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
@@ -126,25 +128,25 @@
             <fieldset class="catalog-filter-group filter-group-price">
               <legend class="catalog-filter-item">Стоимость, ₽:</legend>
               <div class="range">
-              <div class="range-before">
-                <input class="range-input-before" type="number" name="min-price" value="0" id="min-price">
-                <laber class="text-before" for="min-price">от</laber>
-              </div>
-              <div class="range-after">
-                <input class="range-input-after" type="number" name="max-price" value="9000" id="max-price">
-                <laber class="text-after" for="max-price">до</laber>
-              </div>
-              </div>
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 227px">
-                    <button class="range-toggle toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
-                  </div>
+                <div class="range-before">
+                  <input class="range-input-before" type="number" name="min-price" value="0" id="min-price">
+                  <label class="text-before" for="min-price">от</label>
                 </div>
+                <div class="range-after">
+                  <input class="range-input-after" type="number" name="max-price" value="9000" id="max-price">
+                  <label class="text-after" for="max-price">до</label>
+                </div>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 227px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
             <div class="button-filter-catalog">
               <button class="apply-button" type="submit">
@@ -160,12 +162,12 @@
           <div class="headen-hotels">
             <h2 class="result-searche">Найдено гостиниц: 38</h2>
             <div class="select">
-            <select class="catalog-sorting">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-          </div>
+              <select class="catalog-sorting">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+            </div>
             <ul class="sorting">
               <li class="sorting-name">
                 <a class="card-grid-toggle card-grid-toggle-current" href="#">

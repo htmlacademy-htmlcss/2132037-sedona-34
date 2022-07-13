@@ -40,7 +40,6 @@ body {
   box-shadow: 0 0 40px 0 #dbdbdb;
 }
 
-/* Header */
 .navigation {
   display: flex;
   width: 1200px;
@@ -163,14 +162,6 @@ body {
   content: "";
 }
 
-/* .control-input-infrastructure[type="checkbox"]:checked + .control-input::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 0;
-  background-image: url("../images/background/jackdaw.svg");
-} */
-
 .button-header {
   display: block;
   font-weight: 700;
@@ -198,7 +189,6 @@ body {
   height: 65px;
 }
 
-/* Main-title */
 .main-index {
   text-align: center;
 }
@@ -272,7 +262,6 @@ body {
 }
 
 
-/* Information */
 .large-blocks {
   background: #82B3D3;
   color: #FFFFFF;
@@ -287,6 +276,10 @@ body {
   padding: 0;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.other-advantages {
+  display: flex;
 }
 
 .advantages-item {
@@ -375,7 +368,6 @@ body {
   list-style-type: none;
 }
 
-/* proposal and subscribe */
 .proposal {
   font-size: 22px;
   line-height: 26px;
@@ -513,7 +505,6 @@ body {
   fill: #FFFFFF;
 }
 
-/* Footer */
 
 .page-footer-container {
   align-items: center;
@@ -559,9 +550,6 @@ body {
 }
 
 
-/* Catalog */
-
-/*selection*/
 
 
 .selection-hotels {
@@ -835,10 +823,6 @@ body {
 .hotels-card-image {
   object-fit: cover;
 }
-
-/* .rating-stars {
-  line-height: 37px;
-} */
 
 .rating-stars-four {
   display: inline-block;
@@ -1628,23 +1612,13 @@ body {
   cursor: pointer;
 }
 
-/* .decoration-info {
-position: absolute;
-right: 152px;
-top: 14px;
-width: 25px;
-height: 25px;
-background-color: #83B3D3;
-border-radius: 50%;
-}
-*/
 .tooltip-toggle::after {
   content: "";
   position: absolute;
   right: 11px;
   top: 8px;
-width: 1px;
-height: 1px;
+  width: 1px;
+  height: 1px;
   background-image: url("../images/decoration-tooltip-2.svg");
 }
 
@@ -1655,8 +1629,8 @@ height: 1px;
   top: 12px;
   width: 1px;
   height: 6px;
-background-image: url("../images/decoration-tooltip-1.svg");
-z-index: 1;
+  background-image: url("../images/decoration-tooltip-1.svg");
+  z-index: 1;
 }
 
 .button-search {
@@ -1674,7 +1648,7 @@ z-index: 1;
   cursor: pointer;
 }
 
-.button-search:hover{
+.button-search:hover {
   background-color: #68A2CA;
 }
 
@@ -1696,7 +1670,8 @@ z-index: 1;
 }
 
 .tooltip-toggle {
-  position: relative;;
+  position: relative;
+  ;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -1745,8 +1720,8 @@ z-index: 1;
   z-index: 1;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
 
