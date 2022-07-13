@@ -656,6 +656,19 @@ body {
   appearance: none;
 }
 
+.catalog-sorting:hover,
+.catalog-sorting:focus {
+  border: 2px solid #68A2CA
+}
+
+.catalog-sorting:active {
+  border: 2px solid #3F5E72
+}
+
+.catalog-sorting:disabled {
+  color: rgba(0, 0, 0, 0.3) border: 2px solid #0000004D;
+}
+
 .button {
   text-decoration: none;
 }
@@ -1274,6 +1287,14 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
+.circle-button circle {
+  fill: #83B3D3;
+}
+
+.circle-button:hover circle {
+  fill: #68A2CA;
+}
+
 .footer-html-link path {
   fill: #000000;
 }
@@ -1320,7 +1341,20 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
+}
 
+.quantity-hotels:hover,
+.quantity-hotels:focus {
+  border: 2px solid #68A2CA;
+}
+
+.quantity-hotels:active {
+  border: 2px solid #3F5E72;
+}
+
+.quantity-hotels:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #0000004D;
 }
 
 .line-bottom {
@@ -1422,6 +1456,20 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  color: #000000;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+  opacity: 30%;
 }
 
 .date-check-in-block {
@@ -1453,7 +1501,23 @@ body {
   margin-left: 52px;
 }
 
-.date-picker,
+.date-picker {
+  width: 361px;
+  height: 50px;
+  background-color: #F2F2F2;
+  padding: 0 40px 0 19px;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  opacity: 60%;
+  font-weight: 700;
+  margin-left: 37px;
+}
+
 .date-departure-picker {
   width: 361px;
   height: 50px;
@@ -1465,14 +1529,43 @@ body {
   line-height: 21px;
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
-}
-
-.date-departure-picker {
+  color: #000000;
+  opacity: 60%;
+  font-weight: 700;
   margin-left: 31px;
 }
 
-.date-picker {
-  margin-left: 37px;
+.date-departure-picker:hover,
+.date-picker:hover {
+  background-color: #E6E6E6;
+}
+
+.date-departure-picker:focus {
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  margin-left: 25px;
+}
+
+.date-picker:focus {
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  margin-left: 31px;
+}
+
+.date-departure-picker:active {
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  margin-left: 25px;
+  color: #000000;
+  opacity: 100%;
+}
+
+.date-picker:active {
+  color: #000000;
+  opacity: 100%;
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+  margin-left: 33px;
 }
 
 .calendar {
@@ -1534,6 +1627,7 @@ body {
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  color: #000000;
 }
 
 .button-plus {
@@ -1709,6 +1803,10 @@ body {
   display: none;
 }
 
+.tooltip-text:hover {
+  bac
+}
+
 .tooltip-text::after {
   position: absolute;
   top: -8px;
@@ -1733,3 +1831,5 @@ body {
 .modal-container-close {
   display: none;
 }
+
+.button-minus:hover {}
