@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <title>HTML Academy - Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="container">
     <header class="page-header">
-      <a class="page-logo" href="#">
-        <img class="navigation-logo" src="./images/logo.svg" width="139" height="70" alt="логотип сайта Седона">
+      <a class="page-logo" href="index.html">
+        <img class="navigation-logo" src="./images/logo.svg" width="139" height="70" alt="логотип сайта Седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -28,7 +29,7 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="./images/search.svg" alt="Поиск">
+              <img src="./images/search.svg" alt="Поиск.">
               <span class="visually-hidden">
                 Поиск
               </span>
@@ -36,7 +37,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link link-favorite" href="#">
-              <img src="./images/favorite.svg" alt="Избранное">
+              <img src="./images/favorite.svg" alt="Избранное.">
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -55,7 +56,7 @@
     <main class="main-index main-container">
       <div class="page-container">
         <div class="main-header">
-          <img class="welcome" src="./images/welcome.svg" alt="welcome">
+          <img class="welcome" src="./images/welcome.svg" alt="welcome.">
         </div>
         <h1 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="header-advantages-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -68,13 +69,13 @@
                 <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="photo-card-1">
-                <img src="./images/photo-sedona/photo-1.jpg" width="800" height="384" alt="Фото города">
+                <img src="./images/photo-sedona/photo-1.jpg" width="800" height="384" alt="Фото города.">
               </div>
             </div>
             <ul class="advantages-block">
               <li class="advantages-item">
                 <div class="card">
-                  <img class="advantages-vector" src="./images/Vector-home.svg" alt="#">
+                  <img class="advantages-vector" src="./images/home.svg" alt="#">
                   <h3 class="advantages-title">Жильё</h3>
                   <p class="advantages-text-section">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
                   </p>
@@ -101,7 +102,7 @@
           </li>
           <li class="other-advantages">
             <div class="image advantages">
-              <img src="./images/photo-sedona/photo-2.jpg" width="800" height="384" alt="Фото пустыни">
+              <img src="./images/photo-sedona/photo-2.jpg" width="800" height="384" alt="Фото пустыни.">
             </div>
             <div class="large-blocks card">
               <h2 class="advantages-title-bridge">Там есть<br> мост дьявола</h2>
@@ -146,15 +147,12 @@
       <section class="subscribe">
         <h2 class="advantages-title-subscribe">Подпишитесь на рассылку</h2>
         <p class="advantages-subscibe">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-email">
-          <input class="your-email" type="text" name="email" value placeholder="Ваш e-mail">
+        <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="get">
+          <input class="your-email" type="email" name="email" value placeholder="Ваш e-mail" required>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
-
     </main>
-
-
     <footer class="social-list">
       <div class="page-footer-container">
         <ul class="footer-social-list">
@@ -210,51 +208,54 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в седоне</h2>
       </section>
-      <div class="date-check-in-block">
-        <label class="date-check-in" for="date-check-in">Дата Заезда:</label>
-        <input class="date-picker" type="text" id="date-check-in" placeholder="Укажите дату" value="27 апреля 2020">
-        <button class="calendar" type="button">
-        </button>
-      </div>
-      <p class="error">Мы не можем отправить вас в прошлое.</p>
-      <div class="date-departure-block">
-        <label class="date-departure" for="date-departure">Дата Выезда:</label>
-        <input class="date-departure-picker" id="date-departure" type="text" placeholder="Укажите дату"
-          value="1 сентября 2021">
-        <button class="calendar" type="button">
-        </button>
-      </div>
-      <p class="info-date">На эти даты есть свободные номера. Пока есть.</p>
-      <div class="quantity-persons">
-        <label class="text-adults" for="text-adults">Взрослые:</label>
-        <button class="button-minus" type="button">
-        </button>
-        <input class="number-of-persons" id="text-adults" type="number" name="quantity-persons"
-          placeholder="Количество взрослых" value="2" min="1" max="25">
-        <button class="button-plus" type="button">
-        </button>
-        <span class="form-label form-label-icon">
-          <label class="text-children" for="amount-of-children">Дети:</label>
-          <span class="tooltip">
-            <button class="tooltip-toggle circle-button" type="button" aria-labelledby="tooltip-label">
-              <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
-              </svg>
-            </button>
-            <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
-              возраст которых от 6 до 18 лет.
-              Дети до 6 лет размещаются бесплатно.</span>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <div class="date-check-in-block">
+          <label class="date-check-in" for="date-check-in">Дата Заезда:</label>
+          <input class="date-picker" type="text" id="date-check-in" placeholder="Укажите дату" value="27 апреля 2020">
+          <button class="calendar" type="button">
+          </button>
+        </div>
+        <p class="error">Мы не можем отправить вас в прошлое.</p>
+        <div class="date-departure-block">
+          <label class="date-departure" for="date-departure">Дата Выезда:</label>
+          <input class="date-departure-picker" id="date-departure" type="text" placeholder="Укажите дату"
+            value="1 сентября 2021">
+          <button class="calendar" type="button">
+          </button>
+        </div>
+        <p class="info-date">На эти даты есть свободные номера. Пока есть.</p>
+        <div class="quantity-persons">
+          <label class="text-adults" for="text-adults">Взрослые:</label>
+          <button class="button-minus" type="button">
+          </button>
+          <input class="number-of-persons" id="text-adults" type="number" name="quantity-persons"
+            placeholder="Количество взрослых" value="2" min="1" max="25">
+          <button class="button-plus" type="button">
+          </button>
+          <span class="form-label form-label-icon">
+            <label class="text-children" for="amount-of-children">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle circle-button" type="button" aria-labelledby="tooltip-label">
+                <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                вами,
+                возраст которых от 6 до 18 лет.
+                Дети до 6 лет размещаются бесплатно.</span>
+            </span>
           </span>
-        </span>
-        <button class="button-minus-children" type="button">
-        </button>
-        <input class="number-of-persons-children" id="amount-of-children" type="number" name="quantity-children"
-          placeholder="Количество детей" value="1" min="1" max="25">
-        <button class="button-plus-children" type="button">
-        </button>
-      </div>
-      <button class="button-search" type="submit">Найти</button>
+          <button class="button-minus-children" type="button">
+          </button>
+          <input class="number-of-persons-children" id="amount-of-children" type="number" name="quantity-children"
+            placeholder="Количество детей" value="1" min="1" max="25">
+          <button class="button-plus-children" type="button">
+          </button>
+        </div>
+        <button class="button-search" type="submit">Найти</button>
+      </form>
     </div>
   </div>
 </body>

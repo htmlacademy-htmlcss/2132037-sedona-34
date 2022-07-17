@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="container">
     <header class="page-header">
-      <a class="page-logo" href="#">
-        <img class="navigation-logo" src="./images/logo.svg" width="139" height="70" alt="логотип сайта Седона">
+      <a class="page-logo" href="index.html">
+        <img class="navigation-logo" src="./images/logo.svg" width="139" height="70" alt="логотип сайта Седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -28,7 +29,7 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="./images/search.svg" alt="Поиск">
+              <img src="./images/search.svg" alt="Поиск.">
               <span class="visually-hidden">
                 Поиск
               </span>
@@ -36,7 +37,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link link-favorite" href="#">
-              <img src="./images/favorite.svg" alt="Избранное">
+              <img src="./images/favorite.svg" alt="Избранное.">
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -120,7 +121,7 @@
                   <label class="control">
                     <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="apartments">
                     <span class="control-marking"></span>
-                    <span class="control-label">Аппартаменты</span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -201,7 +202,8 @@
           <ul class="hotels-list">
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
-                <img class="hotels-card-image" src="./images/photo-sedona/hotel-1.jpg" alt="hotel-amara-resot-spa">
+                <img class="hotels-card-image" src="./images/photo-sedona/hotel-1.jpg" width="300" height="211"
+                  alt="hotel-amara-resot-spa.">
               </a>
               <a class="hotels-card-link-title" href="#">
                 <h3 class="hotels-card-title">Amara Resort & Spa</h3>
@@ -217,7 +219,7 @@
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
                 <img class="hotels-card-image" src="./images/photo-sedona/hotel-2.jpg" width="300" height="211"
-                  alt="hotel-villas-at-poco-diablo">
+                  alt="hotel-villas-at-poco-diablo.">
               </a>
               <a class="hotels-card-link-title" href="#">
                 <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
@@ -233,7 +235,7 @@
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
                 <img class="hotels-card-image" src="./images/photo-sedona/hotel-3.jpg" width="300" height="211"
-                  alt="hotel-desert-quail-inn">
+                  alt="hotel-desert-quail-inn.">
               </a>
               <a class="hotels-card-link-title" href="#">
                 <h3 class="hotels-card-title">Desert Quail Inn</h3>
@@ -249,7 +251,7 @@
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
                 <img class="hotels-card-image" src="./images/photo-sedona/hotel-4.jpg" width="300" height="211"
-                  alt="hotel-greentree-inn">
+                  alt="hotel-greentree-inn.">
               </a>
               <a class="hotels-card-link-title" href="#">
                 <h3 class="hotels-card-title">GreenTree Inn</h3>
@@ -296,8 +298,8 @@
         <section class="catalog-subscribe">
           <h2 class="advantages-title-subscribe">Подпишитесь на рассылку</h2>
           <p class="text-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-email">
-            <input class="your-email" type="text" name="email" value placeholder="Ваш e-mail">
+          <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="your-email" type="email" name="email" value placeholder="Ваш e-mail" required>
             <button class="subscribe-button" type="submit">
               Подписаться
             </button>
