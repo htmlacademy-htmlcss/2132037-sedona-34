@@ -676,7 +676,8 @@ body {
 }
 
 .catalog-sorting:disabled {
-  color: rgba(0, 0, 0, 0.3) border: 2px solid #0000004D;
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #0000004D;
 }
 
 .button {
@@ -1559,14 +1560,14 @@ body {
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
   opacity: 100%;
-  color:rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .date-picker:focus {
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
   opacity: 100%;
-  color:rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .date-departure-picker:active {
@@ -1575,7 +1576,7 @@ body {
   color: #000000;
   opacity: 100%;
 }
- 
+
 .date-picker:active {
   color: #000000;
   opacity: 100%;
@@ -1816,10 +1817,6 @@ body {
   transform: translateX(-50%);
   top: 40px;
   display: none;
-}
-
-.tooltip-text:hover {
-  bac
 }
 
 .tooltip-text::after {
